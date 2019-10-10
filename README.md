@@ -1,6 +1,6 @@
-# rippled_master_key
+# xrpl_rfc1751
 
-Encode/decode rippled `wallet_propose` `master_key`s
+Implements the XRP Ledger core server's variant of RFC-1751, as used to encode/decode the `master_key` field in the `wallet_propose` response.
 
 [View source](./index.js)
 
