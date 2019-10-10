@@ -1,0 +1,7 @@
+{
+  "name": "xrp-rfc1751",
+  "version": "1.0.0",
+  "description": "Swap endianness of key before/after encoding with RFC 1751",
+  "main": "index.js",
+  "license": "MIT"
+}
