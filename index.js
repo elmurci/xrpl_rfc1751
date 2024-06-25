@@ -17,9 +17,9 @@ if (inputType === 'hex') {
   // Remove whitespace and interpret hex
   const buf = Buffer.from(input.replace(/\s+/g, ''), 'hex');
   // Swap byte order and use rfc1751
-  console.log(rfc1751.key_to_english(buffer_to_array(swap128(buf))));
+  console.log(rfc1751.key_to_english(buffer_to_array(buf)));
 } else if (inputType === 'master_key') {
-  console.log(swap128(Buffer.from(rfc1751.english_to_key(input))).toString('hex').toUpperCase());
+  console.log(Buffer.from(rfc1751.english_to_key(input)).toString('hex'));
 } else {
   console.log('Unrecognized command');
 }
